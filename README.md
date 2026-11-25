@@ -1,13 +1,12 @@
-# sunpd.ai - Daily Content Plan landing page
+# sunpd.ai — Daily Content Plan landing page
 
-Static page: index.html + images/. No build step.
+Static page: `index.html` + `images/`. No build step. Host on sunpd.ai.
 
-## Already done
-- Free-audit form is connected (sends to the Website Leads CRM sheet + alert email to ym@sunproduction.app). Needs the updated Apps Script deployed once (see below).
-- Domain files included: CNAME (sunpd.ai), robots.txt, sitemap.xml, .nojekyll. Page has canonical, social share image, favicon and search-engine data.
+## To finish
+1. Replace every `PAYMENT_LINK_HERE` (3 places) with the "Start now" sign-up/payment link
+   (flow: business info + logo -> e-sign contract -> $600 setup + $200/mo -> book meeting -> Slack + dashboard -> Meta partner access).
+2. Replace `FORM_ENDPOINT_HERE` with the free-audit form handler (send to our email/CRM).
+3. Add a button on sunpd.app that links to sunpd.ai ("All services" here already links to sunpd.app).
+4. Do not collect Instagram passwords anywhere.
 
-## Still to do
-1. Payment link: open index.html, find `var PAYMENT_URL = "";` near the bottom and put the "Start now" link between the quotes. All 3 "Start now" buttons switch to it. Until then they scroll to the free-audit form.
-2. Point sunpd.ai DNS to GitHub Pages (A records 185.199.108.153 / .109.153 / .110.153 / .111.153, and a www CNAME to sunproduction12.github.io), then set the custom domain in the repo's Pages settings and tick Enforce HTTPS.
-3. Add a button on sunpd.app that links to https://sunpd.ai
-4. Never collect Instagram passwords anywhere.
+Brand: navy #111827, yellow #FACC15, background #F1F4F8, accent #3B5B7E, font Inter.
